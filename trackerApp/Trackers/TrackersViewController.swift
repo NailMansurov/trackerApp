@@ -41,6 +41,10 @@ final class TrackersViewController: UIViewController {
         return label
     }()
     
+    private var categories: [TrackerCategory] = []
+    private var completedTrackers: [TrackerRecord] = []
+    private var newCategories: [TrackerCategory] = []
+    
     // MARK: - LifeCycle
     
     override func viewDidLoad() {
